@@ -84,25 +84,25 @@ def answer_from_knowledge(user_question: str) -> str:
 def evaluate_consumption(kwh: float) -> str:
     if kwh < 150:
         return (
-            f"Your monthly electricity consumption is about {kwh:.1f} kWh.\n\n"
+            f"If monthly electricity consumption is about {kwh:.1f} kWh.\n\n"
             "Your electricity consumption is **LOW**.\n"
             "This indicates efficient energy use or a small household."
         )
     elif 150 <= kwh <= 350:
         return (
-            f"Your monthly electricity consumption is about {kwh:.1f} kWh.\n\n"
+            f"If monthly electricity consumption is about {kwh:.1f} kWh.\n\n"
             "Your electricity consumption is **NORMAL**.\n"
             "This is typical for homes without electric heating."
         )
     elif 350 < kwh <= 600:
         return (
-            f"Your monthly electricity consumption is about {kwh:.1f} kWh.\n\n"
+            f"If monthly electricity consumption is about {kwh:.1f} kWh.\n\n"
             "Your electricity consumption is **HIGH**.\n"
             "You may be using powerful appliances or running them for long periods."
         )
     else:
         return (
-            f"Your monthly electricity consumption is about {kwh:.1f} kWh.\n\n"
+            f"If monthly electricity consumption is about {kwh:.1f} kWh.\n\n"
             "Your electricity consumption is **VERY HIGH**.\n"
             "This often happens with electric heating or very intensive usage."
         )
@@ -230,4 +230,5 @@ st.caption(
     f"Embedding model: `{EMBEDDING_MODEL_NAME}` · "
     f"QA model: `{QA_MODEL_NAME}`"
 )
+
 
