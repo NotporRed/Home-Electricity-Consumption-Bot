@@ -10,7 +10,6 @@ TARIFF_PATH = "eso_tariffs.csv"
 EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 QA_MODEL_NAME = "distilbert-base-cased-distilled-squad"
 
-# Šitą galėsi keisti pagal tipinę leistiną naudoti galią (čia pvz. 5 kW)
 ASSUMED_CAPACITY_KW = 5.0
 
 
@@ -231,3 +230,4 @@ st.caption(
     f"Embedding model: `{EMBEDDING_MODEL_NAME}` · "
     f"QA model: `{QA_MODEL_NAME}`"
 )
+
